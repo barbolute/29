@@ -28,6 +28,11 @@ fastq-dump --gzip --split-files -X 10000 -O rawdata SRR5001849
 fastq-dump --gzip --split-files -X 10000 -O rawdata SRR5001845
 fastq-dump --gzip --split-files -X 10000 -O rawdata SRR5001843
 
+fastq-dump --gzip --split-files -O rawdata SRR5001849
+fastq-dump --gzip --split-files -O rawdata SRR5001845
+fastq-dump --gzip --split-files -O rawdata SRR5001843
+ls
+
 #4 DPI
 fastq-dump --gzip --split-files -X 10000 -O rawdata SRR5001844
 fastq-dump --gzip --split-files -X 10000 -O rawdata SRR5001847

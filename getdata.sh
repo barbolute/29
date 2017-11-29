@@ -18,9 +18,17 @@ GFFSRR=srr/SRR.gff*
 
 # Download and unpack the raw RNA-Seq Data for the DE part of experiment
 #from spleen
+#control
 fastq-dump --gzip --split-files -X 10000 -O rawdata SRR5001851
 fastq-dump --gzip --split-files -X 10000 -O rawdata SRR5001848
 fastq-dump --gzip --split-files -X 10000 -O rawdata SRR5001850
+
+#2 DPI
+fastq-dump --gzip --split-files -X 10000 -O rawdata SRR5001849
+fastq-dump --gzip --split-files -X 10000 -O rawdata SRR5001845
+fastq-dump --gzip --split-files -X 10000 -O rawdata SRR5001843
+
+#4 DPI
 fastq-dump --gzip --split-files -X 10000 -O rawdata SRR5001844
 fastq-dump --gzip --split-files -X 10000 -O rawdata SRR5001847
 fastq-dump --gzip --split-files -X 10000 -O rawdata SRR5001846

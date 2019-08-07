@@ -76,3 +76,18 @@ hisat2 -p 16 -x $IDXSRR -1 $R1 -2 $R2 2>> $RUNLOG | samtools sort -l 1.6G -@16 >
 samtools index -@16 $BAM
 
 ls
+
+
+hisat2 -p 16 -x 38.fa -U C1.fastq | samtools sort -l 1.6g -@16 > C1.bam
+samtools index -@16 C1.bam
+
+hisat2 -p 16 -x 38.fa -U C2.fastq | samtools sort -l 1.6g -@16 > C2.bam
+samtools index -@16 C2.bam
+
+hisat2 -p 16 -x 38.fa -U E1.fastq| samtools sort -l 1.6g -@16 > E1.bam
+samtools index -@16 E1.bam
+
+hisat2 -p 16 -x 38.fa -U E2.fastq| samtools sort -l 1.6g -@16 > E2.bam
+samtools index -@16 E2.bam
+
+
